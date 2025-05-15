@@ -26,11 +26,11 @@ Here, I will focus on **classification fine-tunning** as a technique to get LLM 
 <a name="1"></a>
 ### Balancing the classes
 
-Here, I will work with **<a href="https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip">Spam/Ham email dataset</a>**. This data is inbalanced:
+Here, I will work with **<a href="https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip">Spam/Ham email dataset</a>**. This data is imbalanced:
 
     Label
     ham     4825
     spam     747
     Name: count, dtype: int64
 
-This step is a requirement whenever we are dealing with a classification task, there are a lot of different ways of doing this, but here I will go ahead with the undersampling approach. 
+Balancing a dataset is a requirement whenever we are dealing with a classification task, there are a lot of different ways of doing this, but here I will go ahead with the undersampling approach. 
