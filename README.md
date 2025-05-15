@@ -104,3 +104,9 @@ The next step is to fine-tune the model on the supervised data. I did the traini
 
 ![](https://github.com/DanialArab/images/blob/main/llm_from_scratch/loss_and_accuracy_fine_tune_llm_classifier.png)
 
+And the accuracies for the fine-tuned model are:
+
+      Training accuracy: 97.21%
+      Validation accuracy: 97.32%
+      Test accuracy: 95.67%
+
