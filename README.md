@@ -6,8 +6,8 @@ This repo documents my understanding of fine-tuning LLMs, which is mostly based 
 
 1. [Intro](#1)
 2. [Data preparation to make them LLM-friendly](#2)
-   1. [Balancing the classes, a bit of cleaning, and splitting)
-   2. 
+   1. [Balancing the classes, a bit of cleaning, and splitting)(#3)
+   2. [Creating PyTorch Dataloaders, performing Padding or Truncation](#4)
 4. [Re-architecting the LLM](#3)
 5. [Fine-tuning LLM](#4)
 6. [Model evaluation](#10)
@@ -22,10 +22,10 @@ Here, I will focus on **classification fine-tunning** as a technique to get LLM 
 - Model evaluation
 - Model deployment
 
-<a name="1"></a>
+<a name="2"></a>
 ## Data preparation to make them LLM-friendly
 
-<a name="1"></a>
+<a name="3"></a>
 ### Balancing the classes, a bit of cleaning, and splitting
 
 Here, I will work with **<a href="https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip">Spam/Ham email dataset</a>**. This data is imbalanced:
@@ -50,4 +50,10 @@ Then we need to convert the class labels from string to integer:
     Name: count, dtype: int64
 
 
-Spliting the dataset into train/val/test dataset with
+I split the dataset into training, validation, and test sets with a 70/10/20 ratio.
+
+<a name="4"></a>
+### Creating PyTorch Dataloaders, performing Padding or Truncation
+
+
+
