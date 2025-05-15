@@ -40,3 +40,12 @@ Balancing a dataset is a requirement whenever we are dealing with a classificati
     spam    747
     Name: count, dtype: int64
 
+Then we need to convert the class labels from string to integer:
+
+    Label
+    0    747
+    1    747
+    Name: count, dtype: int64
+
+
+
