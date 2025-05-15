@@ -33,4 +33,11 @@ Here, I will work with **<a href="https://archive.ics.uci.edu/static/public/228/
     spam     747
     Name: count, dtype: int64
 
-Balancing a dataset is a requirement whenever we are dealing with a classification task, there are a lot of different ways of doing this, but here I will go ahead with the undersampling approach. 
+Balancing a dataset is a requirement whenever we are dealing with a classification task, there are a lot of different ways of doing this, but here I will go ahead with the undersampling approach and simply doing a random sampling from the majority class to match the number of minority class:
+
+    Label
+    ham     747
+    spam    747
+    Name: count, dtype: int64
+
+
