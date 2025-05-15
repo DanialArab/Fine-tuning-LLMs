@@ -11,7 +11,7 @@ This repo documents my understanding of fine-tuning LLMs, which is mostly based 
 5. [Model evaluation](#10)
 6. [Model deployment](#6)
   
-<a name="1"></a>
+<a name="1"></a> 
 ## Intro
 Here, I will focus on **classification fine-tunning** as a technique to get LLM working as an alternative to traditional classifiers. To fine-tune LLM, we need a pipeline to perform:
 - Data preparation to make them LLM-friendly
