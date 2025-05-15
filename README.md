@@ -4,6 +4,7 @@ This repo documents my understanding of fine-tuning LLMs, which is mostly based 
 - Chapter 1: Understanding large language models
 - Chapter 2: Working with text data, and
 - Chapter 6: Fine-tuning for classification
+
 of the book **<a href="https://www.manning.com/books/build-a-large-language-model-from-scratch">Build a Large Language Model (From Scratch)</a>** by Sebastian Raschka. 
 
 # Table of content
