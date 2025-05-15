@@ -11,6 +11,7 @@ This repo documents my understanding of fine-tuning LLMs, which is mostly based 
 3. [Re-architecting the LLM](#5)
    1. [Model initialization with pre-trained weights](#6)
    2. [Adding the classification head to the pre-trained model](#7)
+   3. [Loss calculation](#8)
 6. [Fine-tuning LLM](#4)
 7. [Model evaluation](#10)
 8. [Model deployment](#6)
@@ -65,13 +66,11 @@ While working with text data of different lengths, we need to make them consiste
 <a name="6"></a>
 ### Model initialization with pre-trained weights
 
-To build a fine-tuned LLM classifier, we have a variety of options as the pre-trained/foundation model. I chose the gpt2-small (124M) model to make the implementation less expensive. Here is a quick summary of the model configuration:
-
+To build a fine-tuned LLM classifier, there is a variety of options as the pre-trained/foundation model. I chose the **gpt2-small (124M)** model to make the implementation less expensive. Here is a quick summary of the model configuration:
 
 |**Embedding dimensions** | **Number of transformer layers (blocks)**|**Number of attention heads per transformer layer** | **Number of parameters** | **Context window**| **Vocabulary size**| 
 | -- | --|  -- | -- | -- | --|
 |768 | 12 |12 | 124 M | 1024 tokens  | 50257|
-
 
 <a name="7"></a>
 ### Adding the classification head to the pre-trained model
@@ -81,3 +80,8 @@ I need to modify the pre-trained LLM architecture to make it fit for a classific
 ![](https://github.com/DanialArab/images/blob/main/llm_from_scratch/re-architecture.jpg)
 
 This modification is necessary because, instead of performing text generation, which is the primary task of the pre-trained model, we now need the model to predict 2 classes as the output of the fine-tuned model. 
+
+<a name="8"></a>
+### Loss calculation
+
+here
