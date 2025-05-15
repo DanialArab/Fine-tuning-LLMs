@@ -124,5 +124,29 @@ Here are the classification report along with the confusion matrix:
          macro avg       0.91      0.89      0.89       300
       weighted avg       0.91      0.89      0.89       300
 
-
 ![](https://github.com/DanialArab/images/blob/main/llm_from_scratch/ham_vs_spam_cm.png)
+
+<a name="11"></a>
+## Making inference
+
+Here are some inferences using the fine-tuned GPT-based spam classifier: 
+
+      text_1 = (
+          "You are a winner you have been specially"
+          " selected to receive $1000 cash or a $2000 award."
+      )
+
+Model prediction:
+
+      spam
+
+another example:
+
+      text_2 = (
+          "Hey, just wanted to check if we're still on"
+          " for dinner tonight? Let me know!"
+      )
+
+Model prediction:
+
+      ham
