@@ -8,10 +8,11 @@ This repo documents my understanding of fine-tuning LLMs, which is mostly based 
 2. [Data preparation to make them LLM-friendly](#2)
    1. [Balancing the classes, a bit of cleaning, and splitting](#3)
    2. [Creating PyTorch Dataloaders, performing Padding or Truncation](#4)
-4. [Re-architecting the LLM](#3)
-5. [Fine-tuning LLM](#4)
-6. [Model evaluation](#10)
-7. [Model deployment](#6)
+3. [Re-architecting the LLM](#5)
+   1.[Model initialization with pre-trained weights](#6)
+6. [Fine-tuning LLM](#4)
+7. [Model evaluation](#10)
+8. [Model deployment](#6)
   
 <a name="1"></a> 
 ## Intro
@@ -57,4 +58,8 @@ I split the dataset into training, validation, and test sets with a 70/10/20 rat
 
 While working with text data of different lengths, we need to make them consistent with either padding (pad all data to the length of the longest in the dataset or batch) or truncation (truncate all data to the length of the shortest in the dataset or batch). I choose padding to make sure I do not lose any useful information, down the road we can revisit this decision after having a chance to go over the results and see how computationally expensive this could be. This should be consistently done in training, validation, and test datasets. 
 
+<a name="5"></a>
+## Re-architecting the LLM
 
+<a name="6"></a>
+### Model initialization with pre-trained weights
