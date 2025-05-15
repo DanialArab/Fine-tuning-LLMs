@@ -17,7 +17,7 @@ of the book **<a href="https://www.manning.com/books/build-a-large-language-mode
    1. [Model initialization with pre-trained weights](#6)
    2. [Adding the classification head to the pre-trained model](#7)
    3. [Loss calculation](#8)
-6. [Fine-tuning LLM](#4)
+6. [Fine-tuning LLM](#9)
 7. [Model evaluation](#10)
 8. [Making inference](#6)
   
@@ -89,8 +89,7 @@ This modification is necessary because, instead of performing text generation, w
 <a name="8"></a>
 ### Loss calculation
 
-
-Before fine-tuning the prediction accuracies are as follows:
+In the generative tasks, LLM generates the token ID of the next token through converting the 50,257 outputs into probabilities via the softmax function and then returning the position of the highest probability via the argmax function. Here in the classification task, the same approach is taken to calculate whether the model outputs a positive class or negative class prediction for a given input. The only difference is that in the classification task we work with 2-dimensional instead of 50,257-dimensional outputs. Before fine-tuning the prediction accuracies are as follows:
 
       Training accuracy: 46.25%
       Validation accuracy: 45.00%
@@ -98,4 +97,10 @@ Before fine-tuning the prediction accuracies are as follows:
 
 As shown above, the accuracies are almost near a random classifier. We try to increase them through fine-tuning. 
 
+<a name="9"></a>
+## Fine-tuning LLM
+
+The next step is to fine-tune the model on the supervised data. I did the training for 5 epochs, loss and accuracy for the training and validations sets are presented below: 
+
+![](https://github.com/DanialArab/images/blob/main/llm_from_scratch/loss_and_accuracy_fine_tune_llm_classifier.png)
 
