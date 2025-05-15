@@ -89,4 +89,13 @@ This modification is necessary because, instead of performing text generation, w
 <a name="8"></a>
 ### Loss calculation
 
-here
+
+Before fine-tuning the prediction accuracies are as follows:
+
+      Training accuracy: 46.25%
+      Validation accuracy: 45.00%
+      Test accuracy: 48.75%
+
+As shown above, the accuracies are almost near a random classifier. We try to increase them through fine-tuning. 
+
+
