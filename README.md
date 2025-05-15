@@ -68,37 +68,9 @@ While working with text data of different lengths, we need to make them consiste
 To build a fine-tuned LLM classifier, we have a variety of options as the pre-trained/foundation model. I chose the gpt2-small (124M) model to make the implementation less expensive. Here is a quick summary of the model configuration:
 
 
-|**Prompting** | **Fine-tuning**| | -- | --|  -- | 
+|**Embedding dimensions** | **Number of transformer layers (blocks)**|**Number of attention heads per transformer layer** | **Number of parameters** | **Context window**| **Vocabulary size**| 
 | -- | --|  -- | -- | -- | --|
-|Pros | No data to get started |Nearly unlimited data fits | 
-|  | Smaller upfront cost| Learn new information |
-|2 |1378| Replace Employee ID With The Unique Identifier| 
-
-
-
-Embedding dimensions
-
-Number of transformer layers (blocks)
-
-Number of attention heads per transformer layer
-
-Number of parameters
-
-Context window
-
-Vocabulary size
-
-768
-
-12
-
-12
-
-124 M
-
-1024 tokens 
-
-50257
+|768 | 12 |12 | 124 M | 1024 tokens  | 50257|
 
 
 <a name="7"></a>
