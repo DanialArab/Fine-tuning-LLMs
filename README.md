@@ -55,5 +55,6 @@ I split the dataset into training, validation, and test sets with a 70/10/20 rat
 <a name="4"></a>
 ### Creating PyTorch Dataloaders, performing Padding or Truncation
 
+While working with text data of different lengths, we need to make them consistent with either padding (pad all data to the length of the longest in the dataset or batch) or truncation (truncate all data to the length of the shortest in the dataset or batch). I choose padding to make sure I do not lose any useful information, down the road we can revisit this decision after having a chance to go over the results and see how computationally expensive this could be. This should be consistently done in training, validation, and test datasets. 
 
 
