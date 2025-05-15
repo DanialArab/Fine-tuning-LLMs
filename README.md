@@ -1,6 +1,6 @@
 # Fine-tuning LLMs
 
-This repo documents my understanding of fine-tuning LLMs, which is mostly based on following chapters:
+This repo documents my understanding of fine-tuning LLMs, which is mostly based on the chapters:
 - Chapter 1: Understanding large language models
 - Chapter 2: Working with text data, and
 - Chapter 6: Fine-tuning for classification
