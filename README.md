@@ -69,4 +69,8 @@ While working with text data of different lengths, we need to make them consiste
 <a name="7"></a>
 ### Adding the classification head to the pre-trained model
 
-I need to modify the pre-trained LLM architecture to make it fit for a classification task. To do so, I need to replace the original output layer, which maps the hidden representation to a vocabulary of 50,257 (the total number of unique tokens the model was trained to recognize and generate during pretraining), with a smaller output layer that maps to two classes: 0 (negative class) and 1 (positive class), as shown below. This modification is necessary because, instead of performing text generation, which is the primary task of the pre-trained model, we now need the model to predict 2 classes as the output of the fine-tuned model. 
+I need to modify the pre-trained LLM architecture to make it fit for a classification task. To do so, I need to replace the original output layer, which maps the hidden representation to a vocabulary of 50,257 (the total number of unique tokens the model was trained to recognize and generate during pretraining), with a smaller output layer that maps to two classes: 0 (negative class) and 1 (positive class), as shown below:
+
+![](https://github.com/DanialArab/images/blob/main/llm_from_scratch/re-architecture.jpg)
+
+This modification is necessary because, instead of performing text generation, which is the primary task of the pre-trained model, we now need the model to predict 2 classes as the output of the fine-tuned model. 
