@@ -6,7 +6,7 @@ This repo documents my understanding of fine-tuning LLMs, which is mostly based 
 
 1. [Intro](#1)
 2. [Data preparation to make them LLM-friendly](#2)
-   1. [Balancing the classes, a bit of cleaning, and splitting)(#3)
+   1. [Balancing the classes, a bit of cleaning, and splitting](#3)
    2. [Creating PyTorch Dataloaders, performing Padding or Truncation](#4)
 4. [Re-architecting the LLM](#3)
 5. [Fine-tuning LLM](#4)
