@@ -113,3 +113,16 @@ And the accuracies for the fine-tuned model are:
 <a name="10"></a>
 ## Model evaluation
 
+Here are the classification report along with the confusion matrix:
+
+                  precision    recall  f1-score   support
+      
+                 0       0.98      0.81      0.88       149
+                 1       0.84      0.98      0.90       151
+      
+          accuracy                           0.89       300
+         macro avg       0.91      0.89      0.89       300
+      weighted avg       0.91      0.89      0.89       300
+
+
+![](https://github.com/DanialArab/images/blob/main/llm_from_scratch/ham_vs_spam_cm.png)
