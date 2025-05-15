@@ -14,7 +14,7 @@ This repo documents my understanding of fine-tuning LLMs, which is mostly based 
    3. [Loss calculation](#8)
 6. [Fine-tuning LLM](#4)
 7. [Model evaluation](#10)
-8. [Model deployment](#6)
+8. [Making inference](#6)
   
 <a name="1"></a> 
 ## Intro
