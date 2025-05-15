@@ -40,4 +40,3 @@ Balancing a dataset is a requirement whenever we are dealing with a classificati
     spam    747
     Name: count, dtype: int64
 
-
