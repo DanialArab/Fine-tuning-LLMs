@@ -19,7 +19,7 @@ of the book **<a href="https://www.manning.com/books/build-a-large-language-mode
    3. [Loss calculation](#8)
 6. [Fine-tuning LLM](#9)
 7. [Model evaluation](#10)
-8. [Making inference](#6)
+8. [Making inference](#11)
   
 <a name="1"></a> 
 ## Intro
@@ -109,4 +109,7 @@ And the accuracies for the fine-tuned model are:
       Training accuracy: 97.21%
       Validation accuracy: 97.32%
       Test accuracy: 95.67%
+
+<a name="10"></a>
+## Model evaluation
 
