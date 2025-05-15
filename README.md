@@ -9,7 +9,8 @@ This repo documents my understanding of fine-tuning LLMs, which is mostly based 
    1. [Balancing the classes, a bit of cleaning, and splitting](#3)
    2. [Creating PyTorch Dataloaders, performing Padding or Truncation](#4)
 3. [Re-architecting the LLM](#5)
-   1.[Model initialization with pre-trained weights](#6)
+   1. [Model initialization with pre-trained weights](#6)
+   2. [Adding the classification head to the pre-trained model](#7)
 6. [Fine-tuning LLM](#4)
 7. [Model evaluation](#10)
 8. [Model deployment](#6)
@@ -63,3 +64,9 @@ While working with text data of different lengths, we need to make them consiste
 
 <a name="6"></a>
 ### Model initialization with pre-trained weights
+
+
+<a name="7"></a>
+### Adding the classification head to the pre-trained model
+
+I need to modify the pre-trained LLM architecture to make it fit for a classification task. To do so, I need to replace the original output layer, which maps the hidden representation to a vocabulary of 50,257 (the total number of unique tokens the model was trained to recognize and generate during pretraining), with a smaller output layer that maps to two classes: 0 (negative class) and 1 (positive class), as shown below. This modification is necessary because, instead of performing text generation, which is the primary task of the pre-trained model, we now need the model to predict 2 classes as the output of the fine-tuned model. 
